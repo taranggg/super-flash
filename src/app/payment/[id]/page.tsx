@@ -7,7 +7,7 @@ export default function Payment() {
     <div className="min-h-screen text-black dark:text-zinc-100 font-sans">
       <Header />
       <main>
-        <SectionContainer className="text-center pt-16 pb-8">
+        <div className="max-w-screen-xl mx-auto px-6 pt-36 pb-8 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-cyan-400">
             Buy FLASH USDT
           </h1>
@@ -16,14 +16,32 @@ export default function Payment() {
           </p>
           <div className="mt-4 text-sm text-cyan-400">Order ID: #123456</div>
           <div className="flex justify-center gap-4 mt-4">
-            <span className="px-3 py-1 rounded bg-green-900 text-green-300 text-xs">
+            <span
+              className="px-3 py-1 rounded-full shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(30,60,40,0.4)] text-green-300 text-xs backdrop-blur-lg"
+              style={{
+                boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.37)",
+                borderRadius: "9999px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(30,60,40,0.4)",
+                backdropFilter: "blur(8px)",
+              }}
+            >
               Verified
             </span>
-            <span className="px-3 py-1 rounded bg-blue-900 text-blue-300 text-xs">
+            <span
+              className="px-3 py-1 rounded-full shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(30,30,60,0.4)] text-blue-300 text-xs backdrop-blur-lg"
+              style={{
+                boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.37)",
+                borderRadius: "9999px",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(30,30,60,0.4)",
+                backdropFilter: "blur(8px)",
+              }}
+            >
               10-15 min delivery
             </span>
           </div>
-        </SectionContainer>
+        </div>
         <SectionContainer>
           <h2 className="text-2xl font-bold mb-8 text-center">Buy Form</h2>
           <form className="max-w-xl mx-auto grid gap-6">
@@ -57,7 +75,15 @@ export default function Payment() {
             </div>
             <button
               type="submit"
-              className="px-6 py-3 rounded-full bg-cyan-400 text-cyan-950 font-semibold shadow hover:scale-105 transition"
+              className="px-6 py-3 rounded-full font-semibold glassmorphic-btn"
+              style={{
+                border: "2px solid transparent",
+                background: "rgba(30,30,40,0.2)",
+                color: "#38bdf8",
+                boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.37)",
+                backdropFilter: "blur(8px)",
+                borderRadius: "9999px",
+              }}
             >
               Create Order
             </button>
@@ -75,15 +101,37 @@ export default function Payment() {
         <SectionContainer>
           <h2 className="text-2xl font-bold mb-8 text-center">FAQs</h2>
           <div className="max-w-2xl mx-auto">
-            <div className="mb-4 rounded-lg bg-zinc-900 p-4">
-              <div className="font-semibold">Is my payment secure?</div>
-              <div className="text-sm text-zinc-500 dark:text-zinc-400">
+            <div
+              className="mb-6 rounded-2xl shadow-xl backdrop-blur-lg bg-[rgba(30,30,40,0.6)] border border-[rgba(255,255,255,0.08)] p-6"
+              style={{
+                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+                borderRadius: "1.5rem",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(30,30,40,0.6)",
+                backdropFilter: "blur(16px)",
+              }}
+            >
+              <div className="font-semibold text-cyan-200">
+                Is my payment secure?
+              </div>
+              <div className="text-sm text-cyan-100 opacity-80">
                 Yes, all payments are verified and protected.
               </div>
             </div>
-            <div className="mb-4 rounded-lg bg-zinc-100 dark:bg-zinc-900 p-4">
-              <div className="font-semibold">How long does delivery take?</div>
-              <div className="text-sm text-zinc-500 dark:text-zinc-400">
+            <div
+              className="mb-6 rounded-2xl shadow-xl backdrop-blur-lg bg-[rgba(30,30,40,0.6)] border border-[rgba(255,255,255,0.08)] p-6"
+              style={{
+                boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+                borderRadius: "1.5rem",
+                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(30,30,40,0.6)",
+                backdropFilter: "blur(16px)",
+              }}
+            >
+              <div className="font-semibold text-cyan-200">
+                How long does delivery take?
+              </div>
+              <div className="text-sm text-cyan-100 opacity-80">
                 Usually within 10-15 minutes.
               </div>
             </div>

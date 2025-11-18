@@ -1,5 +1,17 @@
-import { Button as ShadcnButton } from "@/components/ui/button";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
-export function Button(props: React.ComponentProps<typeof ShadcnButton>) {
-  return <ShadcnButton {...props} />;
+export function Button({
+  children,
+  ...props
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+  return (
+    <HoverBorderGradient
+      as="button"
+      containerClassName="glassmorphic-btn-container"
+      className="glassmorphic-btn"
+      {...props}
+    >
+      {children}
+    </HoverBorderGradient>
+  );
 }
