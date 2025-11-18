@@ -109,19 +109,6 @@ export function Header() {
               {link.name}
             </motion.a>
           ))}
-          {/* Dark mode toggle */}
-          <button
-            aria-label="Toggle dark mode"
-            className="ml-4 px-2 py-1 rounded bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-700"
-            onClick={() => {
-              if (typeof document !== "undefined") {
-                document.documentElement.classList.toggle("dark");
-              }
-            }}
-          >
-            <span className="hidden dark:inline">🌙</span>
-            <span className="dark:hidden">☀️</span>
-          </button>
         </div>
       </motion.div>
     </motion.header>

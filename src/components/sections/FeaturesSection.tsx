@@ -14,9 +14,9 @@ export function FeaturesSection() {
         ].map((feature, i) => (
           <div
             key={feature}
-            className="rounded-xl bg-zinc-100 dark:bg-zinc-900 p-6 shadow hover:shadow-lg transition flex flex-col items-center"
+            className="rounded-xl bg-zinc-900 p-6 shadow hover:shadow-lg transition flex flex-col items-center"
           >
-            <div className="w-10 h-10 bg-sky-500 dark:bg-cyan-400 rounded-full mb-4" />
+            <div className="w-10 h-10 bg-cyan-400 rounded-full mb-4" />
             <div className="font-semibold mb-2">{feature}</div>
             <div className="text-sm text-zinc-500 dark:text-zinc-400 text-center">
               2-line description for {feature}.
