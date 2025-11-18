@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -42,7 +41,7 @@ export function Header() {
     : "max-w-7xl mx-auto flex items-center justify-between py-4 px-6";
   // Mobile classes
   const outerMobile = shrunk
-    ? "backdrop-blur-xl bg-white/6 dark:bg-black/20 border-b border-white/8 dark:border-black/20 shadow-sm"
+    ? "rounded-full backdrop-blur-xl bg-white/6 dark:bg-black/20 border-b border-white/8 dark:border-black/20 shadow-sm"
     : "backdrop-blur-xl bg-white/6 dark:bg-black/20 border-b border-white/6 dark:border-black/10 shadow-none";
   const contentMobile =
     "max-w-7xl mx-auto flex items-center justify-between px-4 py-3";
@@ -70,6 +69,7 @@ export function Header() {
         zIndex: 50,
         WebkitBackdropFilter: "blur(12px)",
         backgroundClip: "padding-box",
+        borderRadius: shrunk ? "9999px" : undefined,
       }}
     >
       <motion.div

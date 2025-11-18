@@ -1,7 +1,7 @@
 "use client";
+import { Button } from "@/components/Button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SectionContainer } from "@/components/SectionContainer";
 import { useState } from "react";
 
 export default function Resale() {
@@ -13,7 +13,7 @@ export default function Resale() {
   }
 
   return (
-    <div className="min-h-screen font-sans bg-gradient-to-br from-cyan-900 via-blue-900 to-blue-950 text-cyan-100">
+    <div className="min-h-screen text-zinc-100 font-sans bg-gradient-to-br from-black via-[#0a1a2f] to-[#1a2a3f]">
       <Header />
       <main>
         <div>
@@ -108,40 +108,27 @@ export default function Resale() {
               </div>
             ) : (
               <form
-                className="max-w-xl mx-auto grid gap-6"
+                className="max-w-xl mx-auto grid gap-6 p-8 rounded-2xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] backdrop-blur-lg"
                 onSubmit={handleSubmit}
               >
                 <input
                   type="email"
                   placeholder="Email"
                   required
-                  className="px-4 py-3 rounded bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700"
+                  className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(30,30,40,0.7)] text-cyan-100 placeholder:text-cyan-400 backdrop-blur-lg"
                 />
                 <input
                   type="number"
                   placeholder="FLASH amount"
                   required
-                  className="px-4 py-3 rounded bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700"
+                  className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(30,30,40,0.7)] text-cyan-100 placeholder:text-cyan-400 backdrop-blur-lg"
                 />
                 <input
                   type="file"
                   multiple
-                  className="px-4 py-3 rounded bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700"
+                  className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(30,30,40,0.7)] text-cyan-100 backdrop-blur-lg"
                 />
-                <button
-                  type="submit"
-                  className="px-6 py-3 rounded-full font-semibold glassmorphic-btn"
-                  style={{
-                    border: "2px solid transparent",
-                    background: "rgba(30,30,40,0.2)",
-                    color: "#38bdf8",
-                    boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.37)",
-                    backdropFilter: "blur(8px)",
-                    borderRadius: "9999px",
-                  }}
-                >
-                  Request Resale
-                </button>
+                <Button type="submit">Request Resale</Button>
               </form>
             )}
           </div>

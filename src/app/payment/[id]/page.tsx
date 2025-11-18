@@ -1,10 +1,10 @@
+import { Button } from "@/components/Button";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { SectionContainer } from "@/components/SectionContainer";
 
 export default function Payment() {
   return (
-    <div className="min-h-screen text-black dark:text-zinc-100 font-sans">
+    <div className="min-h-screen text-zinc-100 font-sans bg-gradient-to-br from-black via-[#0a1a2f] to-[#1a2a3f]">
       <Header />
       <main>
         <div className="max-w-screen-xl mx-auto px-6 pt-36 pb-8 text-center">
@@ -42,10 +42,10 @@ export default function Payment() {
             </span>
           </div>
         </div>
-        <SectionContainer>
+        <div className="max-w-screen-xl mx-auto px-6 py-12">
           <h2 className="text-2xl font-bold mb-8 text-center">Buy Form</h2>
-          <form className="max-w-xl mx-auto grid gap-6">
-            <select className="px-4 py-3 rounded bg-zinc-900 border border-zinc-700 text-cyan-100">
+          <form className="max-w-xl mx-auto grid gap-6 p-8 rounded-2xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] backdrop-blur-lg">
+            <select className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] text-cyan-100 backdrop-blur-lg">
               <option>Select Network</option>
               <option>TRC20</option>
               <option>Binance</option>
@@ -54,17 +54,17 @@ export default function Payment() {
             <input
               type="number"
               placeholder="FLASH amount"
-              className="px-4 py-3 rounded bg-zinc-900 border border-zinc-700 text-cyan-100 placeholder:text-cyan-400"
+              className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] text-cyan-100 placeholder:text-cyan-400 backdrop-blur-lg"
             />
             <input
               type="text"
               placeholder="Wallet address"
-              className="px-4 py-3 rounded bg-zinc-900 border border-zinc-700 text-cyan-100 placeholder:text-cyan-400"
+              className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] text-cyan-100 placeholder:text-cyan-400 backdrop-blur-lg"
             />
             <input
               type="email"
               placeholder="Email"
-              className="px-4 py-3 rounded bg-zinc-900 border border-zinc-700 text-cyan-100 placeholder:text-cyan-400"
+              className="px-4 py-3 rounded-xl shadow-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(20,20,30,0.7)] text-cyan-100 placeholder:text-cyan-400 backdrop-blur-lg"
             />
             <div className="text-sm text-cyan-400">
               You must pay: <span className="font-bold">[calculated USDT]</span>
@@ -73,23 +73,10 @@ export default function Payment() {
               You will receive:{" "}
               <span className="font-bold">[calculated FLASH USDT]</span>
             </div>
-            <button
-              type="submit"
-              className="px-6 py-3 rounded-full font-semibold glassmorphic-btn"
-              style={{
-                border: "2px solid transparent",
-                background: "rgba(30,30,40,0.2)",
-                color: "#38bdf8",
-                boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.37)",
-                backdropFilter: "blur(8px)",
-                borderRadius: "9999px",
-              }}
-            >
-              Create Order
-            </button>
+            <Button type="submit">Create Order</Button>
           </form>
-        </SectionContainer>
-        <SectionContainer>
+        </div>
+        <div className="max-w-screen-xl mx-auto px-6 py-12">
           <h2 className="text-xl font-semibold mb-4">Instructions</h2>
           <ul className="list-decimal pl-6 space-y-2 text-cyan-300">
             <li>Send USDT to the wallet shown after submitting</li>
@@ -97,8 +84,8 @@ export default function Payment() {
             <li>We verify and deliver FLASH USDT</li>
             <li>Estimated delivery: 10-15 minutes</li>
           </ul>
-        </SectionContainer>
-        <SectionContainer>
+        </div>
+        <div className="max-w-screen-xl mx-auto px-6 py-12">
           <h2 className="text-2xl font-bold mb-8 text-center">FAQs</h2>
           <div className="max-w-2xl mx-auto">
             <div
@@ -136,7 +123,7 @@ export default function Payment() {
               </div>
             </div>
           </div>
-        </SectionContainer>
+        </div>
       </main>
       <Footer />
     </div>
