@@ -1,4 +1,4 @@
-import FloatingLines from "@/components/FloatingLines";
+// import FloatingLines from "@/components/FloatingLines";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -8,21 +8,17 @@ import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { ImportantNotesSection } from "@/components/sections/ImportantNotesSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import ShaderBackground from "@/components/shader-background";
 
 export default function Home() {
+  // <FloatingLines ... /> commented out, replaced with Plasma background
+  // import Plasma from '@react-bits/Plasma-TS-CSS';
   return (
     <div className="relative min-h-screen font-sans overflow-hidden text-cyan-100">
       <div className="absolute inset-0 z-0">
-        <FloatingLines
-          linesGradient={["#38bdf8", "#06b6d4", "#818cf8"]}
-          enabledWaves={["top", "middle", "bottom"]}
-          lineCount={[6, 8, 5]}
-          lineDistance={[5, 7, 4]}
-          animationSpeed={1.2}
-          interactive={true}
-          parallax={true}
-          mixBlendMode="screen"
-        />
+        {/* <FloatingLines ... /> */}
+        {/* Shader background */}
+        <ShaderBackground color="#12232bff" />
       </div>
       <div className="relative z-10">
         <Header />
