@@ -85,9 +85,13 @@ export function Header() {
           <Link
             href="/"
             aria-label="Go to top"
-            className="font-bold text-2xl text-cyan-400 drop-shadow-lg"
+            className="flex items-center gap-2"
           >
-            SuperFlash
+            <img
+              src="/logoText.png"
+              alt="SuperFlash Logo"
+              className="h-10 w-auto drop-shadow-lg"
+            />
           </Link>
         </motion.div>
 

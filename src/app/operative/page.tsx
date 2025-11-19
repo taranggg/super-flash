@@ -16,7 +16,7 @@ export default function Operative() {
     <div className="min-h-screen text-zinc-100 font-sans bg-gradient-to-br from-black via-[#0a1a2f] to-[#1a2a3f]">
       <Header />
       <main>
-        <div className="max-w-screen-xl mx-auto px-6 pt-36 pb-8 text-center">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 pt-32 md:pt-36 pb-8 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-sky-500 dark:text-cyan-400">
             Become an Operator
           </h1>
@@ -24,7 +24,7 @@ export default function Operative() {
             Earn high commissions and join a global program.
           </p>
         </div>
-        <div className="max-w-screen-xl mx-auto px-6 py-12">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-12">
           <h2 className="text-2xl font-bold mb-8 text-center">
             Program Benefits
           </h2>
@@ -57,7 +57,7 @@ export default function Operative() {
             ))}
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto px-6 py-12">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-12">
           <h2 className="text-2xl font-bold mb-8 text-center">How To Join</h2>
           <div className="flex flex-col md:flex-row justify-center gap-8">
             {[
@@ -90,7 +90,7 @@ export default function Operative() {
             ))}
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto px-6 py-12">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-12">
           <h2 className="text-xl font-semibold mb-4">Requirements</h2>
           <div
             className="rounded-2xl shadow-xl backdrop-blur-lg bg-[rgba(30,30,40,0.6)] border border-[rgba(255,255,255,0.08)] p-6 max-w-xl mx-auto"
@@ -109,7 +109,7 @@ export default function Operative() {
             </ul>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto px-6 py-12">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-12">
           <h2 className="text-2xl font-bold mb-8 text-center">
             Application Form
           </h2>

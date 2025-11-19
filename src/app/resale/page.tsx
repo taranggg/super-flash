@@ -25,7 +25,7 @@ export default function Resale() {
               Quickly resell your FLASH USDT in a few simple steps.
             </p>
           </div>
-          <div className="max-w-screen-xl mx-auto px-6 py-12">
+          <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 md:py-12">
             <h2 className="text-2xl font-bold mb-8 text-center">
               How Resale Works
             </h2>
