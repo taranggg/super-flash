@@ -4,21 +4,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export function Header() {
-  const [shrunk, setShrunk] = useState(false);
+  const shrunk = true;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY || window.pageYOffset;
-      setShrunk(y > 36);
-    };
     const onResize = () => setIsMobile(window.innerWidth < 768);
-    onScroll();
     onResize();
-    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize);
     return () => {
-      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
     };
   }, []);

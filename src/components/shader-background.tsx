@@ -15,7 +15,7 @@ uniform vec2 iResolution;
 uniform float iTime;
 uniform vec2 iMouse;
 uniform vec3 u_color1; // Blue
-uniform vec3 u_color2; // Orange
+uniform vec3 u_color2; // Blue shade
 
 void mainImage(out vec4 fragColor, in vec2 fragCoord){
   vec2 uv = (1.0 * fragCoord - iResolution.xy) / min(iResolution.x, iResolution.y);
@@ -94,7 +94,7 @@ const blurClassMap: Record<BlurSize, string> = {
  */
 function ShaderBackground({
   backdropBlurAmount = "sm",
-  color = "#12232bff", // Blue
+  color = "#12232b", // Primary blue
   className = "",
 }: ShaderBackgroundProps): ReactElement {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -176,8 +176,8 @@ function ShaderBackground({
     const startTime = Date.now();
 
     // Set the initial colors
-    const [r1, g1, b1] = hexToRgb(color); // Blue
-    const [r2, g2, b2] = [1.0, 0.6, 0.0]; // Orange (#ff9900)
+    const [r1, g1, b1] = hexToRgb("#0070f3"); // Blue
+    const [r2, g2, b2] = hexToRgb("#0f6a61ff"); // Green shade
     gl.uniform3f(uColor1Location, r1, g1, b1);
     gl.uniform3f(uColor2Location, r2, g2, b2);
 
