@@ -97,7 +97,7 @@ void main(){
 `;
 
 export default function AuroraShader({
-  colorStops = ["#0070f3", "#ff6600", "#0070f3"],
+  colorStops = ["#0070f3", "#0f6a61", "#1b3d64"],
   amplitude = 1.0,
   blend = 0.5,
   speed = 1.0,

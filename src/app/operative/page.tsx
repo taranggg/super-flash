@@ -14,9 +14,9 @@ export default function Operative() {
   }
 
   return (
-    <div className="min-h-screen text-zinc-100 font-sans relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-sky-950 text-zinc-100 font-sans relative overflow-hidden">
       {/* Aurora background */}
-      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+      <div className="absolute inset-0 w-full h-96 pointer-events-none z-0">
         <AuroraShader />
       </div>
       <div className="relative z-10">
